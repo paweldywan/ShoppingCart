@@ -45,6 +45,8 @@
     <Compile Include="Commands\ChangeQuantityCommand.cs" />
     <Compile Include="Commands\CommandManager.cs" />
     <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\RemoveAllFromCartCommand.cs" />
+    <Compile Include="Commands\RemoveFromCartCommand.cs" />
     <Compile Include="Models\LineItem.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

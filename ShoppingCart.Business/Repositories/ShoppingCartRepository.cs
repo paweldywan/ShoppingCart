@@ -36,6 +36,11 @@ namespace ShoppingCart.Business.Repositories
             lineItems[articleId].Quantity++;
         }
 
+        public IEnumerable<LineItem> All()
+        {
+            return lineItems.Select(i => i.Value);
+        }
+
         public LineItem Get(string articleId)
         {
             if(lineItems.ContainsKey(articleId))
@@ -79,6 +84,7 @@ namespace ShoppingCart.Business.Repositories
         void Add(Product product);
         void DecreaseQuantity(string articleId);
         void IncreaseQuantity(string articleId);
+        IEnumerable<LineItem> All();
         LineItem Get(string articleId);
         void RemoveAll(string articleId);
     }
